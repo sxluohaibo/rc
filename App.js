@@ -9,7 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 import TabNavigator from 'react-native-tab-navigator';
@@ -35,7 +36,7 @@ export default class App extends Component{
              renderIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
              renderSelectedIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
              onPress={() => this.setState({ selectedTab: '电影' })}>
-             {/* <MoviePage/> // 这里放入页面组件  */}
+             <Text>不放不行，应该显示电影</Text>
            </TabNavigator.Item>
 
            <TabNavigator.Item
@@ -46,7 +47,7 @@ export default class App extends Component{
              renderIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
              renderSelectedIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
              onPress={() => this.setState({ selectedTab: '音乐' })}>
-             {/* <MusicPage />  */}
+             <Text>不放不行，应该显示音乐</Text>
            </TabNavigator.Item>
 
            <TabNavigator.Item
@@ -56,7 +57,7 @@ export default class App extends Component{
               renderIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
               renderSelectedIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
               onPress={() => this.setState({ selectedTab: '图书' })}>
-              {/* <BookPage /> */}
+              <Text>不放不行，应该显示图书</Text>
              </TabNavigator.Item>
 
             <TabNavigator.Item
@@ -66,7 +67,7 @@ export default class App extends Component{
               renderIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
               renderSelectedIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
               onPress={() => this.setState({ selectedTab: '我的' })}>
-              {/* <MyPage /> */}
+              <Text>不放不行，应该显示你的或者我的</Text>
              </TabNavigator.Item>
           </TabNavigator>
         </View>
