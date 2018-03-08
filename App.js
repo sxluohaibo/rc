@@ -10,11 +10,11 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  Navigator
 } from 'react-native';
-
 import TabNavigator from 'react-native-tab-navigator';
-
+// import Boy form './Boy';
 export default class App extends Component{
 
   constructor(props){
@@ -27,7 +27,23 @@ export default class App extends Component{
   render() {
     return (
       <View style={styles.container} >
-         <TabNavigator>
+
+
+      <Navigator
+        initialRoute={
+          Component:Boy
+        }
+        renderScren={(route,navigator)=>{
+          let Component = route.Component;
+          return <Component navigator={navigator} {...route.params} />
+        }}
+        >
+
+      </Navigator>
+
+
+{/* firstDay*/}
+         {/* <TabNavigator>
 
            <TabNavigator.Item
              selected={this.state.selectedTab === '电影'}
@@ -55,7 +71,7 @@ export default class App extends Component{
               title="图书" titleStyle={styles.tabText}
               selectedTitleStyle={styles.selectedTabText}
               renderIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
-              renderSelectedIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
+              renderSelectedIcon={() => <Image style={[styles.icon,{tintColor: 'red'}]} source={require("./res/image/ic_trending.png")} />}
               onPress={() => this.setState({ selectedTab: '图书' })}>
               <Text>不放不行，应该显示图书</Text>
              </TabNavigator.Item>
@@ -63,13 +79,14 @@ export default class App extends Component{
             <TabNavigator.Item
               selected={this.state.selectedTab === '我的'}
               title="我的" titleStyle={styles.tabText}
+              badgeText="1"
               selectedTitleStyle={styles.selectedTabText}
               renderIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
               renderSelectedIcon={() => <Image style={styles.icon} source={require("./res/image/ic_trending.png")} />}
               onPress={() => this.setState({ selectedTab: '我的' })}>
               <Text>不放不行，应该显示你的或者我的</Text>
              </TabNavigator.Item>
-          </TabNavigator>
+          </TabNavigator> */}
         </View>
     );
   }
