@@ -1,13 +1,13 @@
-import React,{Component} from 'react';
-import {
-  Platform,
-  View,
-  Text,
-  StyleSheet,
-  Navigator,
-} form 'react-native';
+// import React,{Component} from 'react';
+// import {
+//   Platform,
+//   View,
+//   Text,
+//   StyleSheet,
+//   Navigator,
+// } form 'react-native';
 
-class Boy extends Component {
+export default class Boy extends Component {
   constructor(props) {
     super(props);
     this.state={
@@ -22,7 +22,7 @@ class Boy extends Component {
         <Text style={styles.text}
           onPress={()=>{
 
-          }}>i am a boy</Text>
+          }}>I am a boy</Text>
       </View>
     )
   }
@@ -30,9 +30,10 @@ class Boy extends Component {
 
 
 const styles=StyleSheet.create({
+
   container:{
-    flex: 1;
-    backgroundColor: 'blue'
+    flex:1,
+    backgroundColor:'blue'
   },
   text:{
     fontSize: 20,

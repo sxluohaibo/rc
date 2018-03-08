@@ -14,6 +14,7 @@ import {
   Navigator
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator';
+import Boy from './Boy';
 // import Boy form './Boy';
 export default class App extends Component{
 
@@ -28,8 +29,8 @@ export default class App extends Component{
     return (
       <View style={styles.container} >
 
-
-      <Navigator
+          <Text>hello world</Text>
+      {/* <Navigator
         initialRoute={
           Component:Boy
         }
@@ -39,7 +40,7 @@ export default class App extends Component{
         }}
         >
 
-      </Navigator>
+      </Navigator> */}
 
 
 {/* firstDay*/}
@@ -93,7 +94,8 @@ export default class App extends Component{
 }
 
 const styles = StyleSheet.create(
-  { container:{ flex:1, backgroundColor:'#fff' },
+  {
+    container:{ flex:1, backgroundColor:'#fff' },
     tabText:{ color:'#000000', fontSize:10 },
     selectedTabText:{ color:'#D81E06' },
     icon:{ width:20, height:20 }
