@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator';
 import Boy from './Boy';
-// import Boy form './Boy';
+//import Boy form './Boy';
 export default class App extends Component{
 
   constructor(props){
@@ -29,8 +29,9 @@ export default class App extends Component{
     return (
       <View style={styles.container} >
 
-          <Text>hello world</Text>
-      {/* <Navigator
+          {/* <Text>hello world</Text> */}
+      <Navigator
+
         initialRoute={
           Component:Boy
         }
@@ -40,7 +41,7 @@ export default class App extends Component{
         }}
         >
 
-      </Navigator> */}
+      </Navigator>
 
 
 {/* firstDay*/}

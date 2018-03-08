@@ -1,11 +1,11 @@
-// import React,{Component} from 'react';
-// import {
-//   Platform,
-//   View,
-//   Text,
-//   StyleSheet,
-//   Navigator,
-// } form 'react-native';
+import React,{Component} from 'react';
+import {
+  Platform,
+  View,
+  Text,
+  StyleSheet,
+  Navigator,
+} form 'react-native';
 
 export default class Boy extends Component {
   constructor(props) {
@@ -19,10 +19,10 @@ export default class Boy extends Component {
     return(
       <View style={styles.container}>
         <Text style={styles.text}>i am a boy</Text>
-        <Text style={styles.text}
+        {/* <Text style={styles.text}
           onPress={()=>{
 
-          }}>I am a boy</Text>
+          }}>I am a boy</Text> */}
       </View>
     )
   }
