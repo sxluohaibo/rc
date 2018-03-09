@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
 import {
   Platform,
-  View,
-  Text,
   StyleSheet,
-  Navigator,
-} form 'react-native';
+  Text,
+  View,
+  Image
+} from 'react-native';
 
 export default class Boy extends Component {
   constructor(props) {

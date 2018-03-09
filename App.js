@@ -32,9 +32,7 @@ export default class App extends Component{
           {/* <Text>hello world</Text> */}
       <Navigator
 
-        initialRoute={
-          Component:Boy
-        }
+        initialRoute={Boy}
         renderScren={(route,navigator)=>{
           let Component = route.Component;
           return <Component navigator={navigator} {...route.params} />
